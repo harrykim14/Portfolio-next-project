@@ -12,6 +12,8 @@
     "semi": false
   },
   "dependencies": {
+    "@material-ui/core": "4.11.3",
+    "@material-ui/icons": "4.11.2",
     "autoprefixer": "10.2.5",
     "next": "10.1.2",
     "postcss": "8.2.9",
