@@ -4,7 +4,7 @@ import GitHubIcon from '@material-ui/icons/GitHub'
 
 const SideProfile: React.FC = () => {
   return ( 
-    <div className="h-screen bg-gray-50">
+    <div className="h-full bg-gray-50">
       <div className="flex items-center justify-center p-2 py-10">
       <Image
         src="/avatar.jpg"
