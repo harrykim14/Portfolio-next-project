@@ -1,8 +1,19 @@
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import GitHubIcon from '@material-ui/icons/GitHub'
 
 const SideProfile: React.FC = () => {
+  const [width, setWidth] = useState(0);
+  
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // detect window screen width function
+      setWidth(window.innerWidth);
+    }
+  }, []);
+  
+
   return ( 
     <div className="h-full bg-gray-50">
       <div className="flex items-center justify-center p-2 py-10">
@@ -14,7 +25,10 @@ const SideProfile: React.FC = () => {
         className="rounded-full m-2"
       />
       </div>
-      <span className="flex items-center justify-center font-mono font-bold text-2xl m-2">
+
+      { width > 720 ?
+        <div>
+        <span className="flex items-center justify-center font-mono font-bold text-2xl m-2">
         Harry Kim
       </span>
       <span className="flex items-center justify-center font-mono text-gray-600 text-base m-2">
@@ -29,6 +43,17 @@ const SideProfile: React.FC = () => {
           <span className="text-lg">GitHub Link</span>
         </a>
       </div>
+      </div>
+      : 
+      <div className="flex items-center justify-center">
+        <a 
+            href="https://github.com/harrykim14"
+            className="cursor-pointer hover:opacity-80 "    
+        >
+          <GitHubIcon className="mr-2"/>
+        </a>
+      </div>
+      }
     </div>
   )
 }

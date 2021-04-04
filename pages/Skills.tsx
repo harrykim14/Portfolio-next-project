@@ -26,27 +26,35 @@ const Skills = () => {
       edit: false
     }
   }
+  const mainTitleStyle = 'title-font mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-3xl sm:leading-none md:text-4xl lg:text-5xl xl:text-6xl'
+  const subTitleStyle = 'leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl'
+  const wrapContainerStyle = 'mb-4 mx-4 md:w-1/3 md:my-3 lg:mx-8 lg:w-1/4 flex flex-col sm:flex-row'
+  const langCardStyle = 'rounded p-4 shadow-lg bg-yellow-200 min-w-full min-h-full'
+  const frlibCardStyle = 'rounded p-4 shadow-lg bg-indigo-200 min-w-full min-h-full'
+  const dbCardStyle = 'rounded p-4 shadow-lg bg-gray-200 min-w-full min-h-full'
+  
   return (
     <Layout title="Skill List">
-      <div className="max-w-6xl mx-auto px-5 py-12 ">
+      <div className="max-w-6xl mx-auto px-5 py-12">
         <div className="text-center mb-10">
-          <h1 className="title-font mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl">
+          <h1 className={mainTitleStyle}>
             Skills
           </h1>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-xl">
+          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
             Skills are scaled with Fluent, Advanced, Intermediate and Beginner.
           </p>
           <br/>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-xl">
+          <p className={subTitleStyle}>
             Languages
           </p>
           <div className="flex mt-6 justify-center">
             <div className="w-16 h-1 rounded-full bg-yellow-400 inline-flex"></div>
           </div>
         </div>
-        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 ">
-          <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-pink-100 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+
+        <div className="flex flex-wrap mb-6">
+          <div className={wrapContainerStyle}>
+            <div className={langCardStyle}>
               <Image
                 className="rounded-full"
                 src="/logos/java.png"
@@ -55,7 +63,7 @@ const Skills = () => {
                 alt="java icon"
               />
               <div className="flex-grow ">
-                <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
+                <h2 className="text-xl title-font font-medium mb-3 font-semibold">
                   Java (Fluent)
                 </h2>
                 <ReactStars
@@ -67,8 +75,8 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-pink-100 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+          <div className={wrapContainerStyle}>
+            <div className={langCardStyle}>
               <Image
                 className="block rounded-full mr-2"
                 src="/logos/html.png"
@@ -93,8 +101,8 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-pink-100 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+          <div className={wrapContainerStyle}>
+            <div className={langCardStyle}>
               <Image
                 className="rounded-full"
                 src="/logos/js.png"
@@ -115,8 +123,8 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-pink-100 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+          <div className={wrapContainerStyle}>
+            <div className={langCardStyle}>
               <Image
                 className="rounded-full"
                 src="/logos/ts.png"
@@ -134,8 +142,8 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-pink-100 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+          <div className={wrapContainerStyle}>
+            <div className={langCardStyle}>
               <Image
                 className="rounded-full"
                 src="/logos/graphql.png"
@@ -156,7 +164,7 @@ const Skills = () => {
         </div>
 
         <div className="text-center mb-10">
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-xl">
+          <p className={subTitleStyle}>
             Libraries & Frameworks
           </p>
           <div className="flex mt-6 justify-center">
@@ -164,9 +172,9 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 ">
-          <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-indigo-200 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+        <div className="flex flex-wrap mb-6">
+          <div className={wrapContainerStyle}>
+            <div className={frlibCardStyle}>
               <Image
                 className="rounded-full"
                 src="/logos/jquery.jpg"
@@ -176,17 +184,16 @@ const Skills = () => {
               />
               <div className="flex-grow ">
                 <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
-                  Jquery (Fluent)
+                  jQuery library (Fluent)
                 </h2>
                 <ReactStars
                   {...fluentLevel.fluent}
                 />
               </div>
             </div>
-          </div>
-          
-          <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-indigo-200 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+          </div>          
+          <div className={wrapContainerStyle}>
+            <div className={frlibCardStyle}>
               <Image
                 className="rounded-full"
                 src="/logos/spring.png"
@@ -207,8 +214,8 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-indigo-200 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+          <div className={wrapContainerStyle}>
+            <div className={frlibCardStyle}>
               <Image
                 className="rounded-full"
                 src="/logos/react.png"
@@ -218,7 +225,7 @@ const Skills = () => {
               />
               <div className="flex-grow ">
                 <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
-                  React (Fluent)
+                  React library (Fluent)
                 </h2>
                 <ReactStars
                   {...fluentLevel.fluent}
@@ -229,8 +236,8 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-indigo-200 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+          <div className={wrapContainerStyle}>
+            <div className={frlibCardStyle}>
               <Image
                 className="rounded-full"
                 src="/logos/vue.jpg"
@@ -248,8 +255,8 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-indigo-200 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+          <div className={wrapContainerStyle}>
+            <div className={frlibCardStyle}>
               <Image
                 className="rounded-full"
                 src="/logos/nextjs.png"
@@ -274,16 +281,17 @@ const Skills = () => {
         
 
         <div className="text-center mb-10">
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-xl">
+          <p className={subTitleStyle}>
             Database
           </p>
           <div className="flex mt-6 justify-center">
             <div className="w-16 h-1 rounded-full bg-gray-400 inline-flex"></div>
           </div>
         </div>
-        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 ">
-        <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-gray-200 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+
+        <div className="flex flex-wrap mb-6">
+        <div className={wrapContainerStyle}>
+            <div className={dbCardStyle}>
               <Image
                 className="block rounded-full mr-2"
                 src="/logos/oracledb.png"
@@ -293,7 +301,7 @@ const Skills = () => {
               />
               <div className="flex-grow ">
                 <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
-                  Oracle (Fluent)
+                  Oracle Database (Fluent)
                 </h2>
                 <ReactStars
                   {...fluentLevel.fluent}
@@ -301,8 +309,8 @@ const Skills = () => {
               </div>
             </div>
           </div>          
-          <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-gray-200 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+          <div className={wrapContainerStyle}>
+            <div className={dbCardStyle}>
               <Image
                 className="block rounded-full mr-2"
                 src="/logos/mongodb.png"
@@ -320,8 +328,8 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-gray-200 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+          <div className={wrapContainerStyle}>
+            <div className={dbCardStyle}>
               <Image
                 className="rounded-full"
                 src="/logos/firebase.png"
