@@ -1,13 +1,36 @@
-import Link from 'next/link'
 import Image from 'next/image'
 import Layout from '../components/Layout'
+import ReactStars from "react-rating-stars-component";
 
 const Skills = () => {
+
+  const fluentLevel = {
+    fluent : {
+      size: 30,
+      value: 5,
+      edit: false
+    },
+    Intermediate : {
+      size: 30,
+      value: 4,
+      edit: false
+    },
+    Advanced : {
+      size: 30,
+      value: 3,
+      edit: false
+    },
+    Beginner : {
+      size: 30,
+      value: 2,
+      edit: false
+    }
+  }
   return (
     <Layout title="Skill List">
       <div className="max-w-6xl mx-auto px-5 py-12 ">
         <div className="text-center mb-10">
-          <h1 className=" title-font mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl">
+          <h1 className="title-font mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl">
             Skills
           </h1>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-xl">
@@ -23,7 +46,7 @@ const Skills = () => {
         </div>
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 ">
           <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-yellow-200 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+            <div className="rounded bg-pink-100 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
               <Image
                 className="rounded-full"
                 src="/logos/java.png"
@@ -35,14 +58,17 @@ const Skills = () => {
                 <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
                   Java (Fluent)
                 </h2>
-                <p className="leading-relaxed text-sm text-justify">
-                  {` The first programming language of me from Feb 2020. Well known grammar and data structures. My first team project was a memo application using java`}
-                </p>
+                <ReactStars
+                  {...fluentLevel.fluent}
+                />
+                <span>
+                  ▶ Did a project with Java(Spring)
+                </span>
               </div>
             </div>
           </div>
           <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-yellow-200 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+            <div className="rounded bg-pink-100 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
               <Image
                 className="block rounded-full mr-2"
                 src="/logos/html.png"
@@ -61,14 +87,14 @@ const Skills = () => {
                 <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
                   HTML, CSS (Fluent) 
                 </h2>
-                <p className="leading-relaxed text-sm text-justify">
-                  {`Well write html document and well apply css properties to DOM elements.`}
-                </p>
+                <ReactStars
+                  {...fluentLevel.fluent}
+                />
               </div>
             </div>
           </div>
           <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-yellow-200 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+            <div className="rounded bg-pink-100 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
               <Image
                 className="rounded-full"
                 src="/logos/js.png"
@@ -80,14 +106,17 @@ const Skills = () => {
                 <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
                   Javascript (Fluent)
                 </h2>
-                <p className="leading-relaxed text-sm text-justify">
-                  {`My main programming language now, deeply interested in vast JavaScript ecosystem. Well use modern ES6 and ES7, ES8 grammar. Well understood asynchronous programming.`}
-                </p>
+                <ReactStars
+                  {...fluentLevel.fluent}
+                />
+                <span>
+                  ▶ Main language now
+                </span>
               </div>
             </div>
           </div>
           <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-yellow-200 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+            <div className="rounded bg-pink-100 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
               <Image
                 className="rounded-full"
                 src="/logos/ts.png"
@@ -99,15 +128,14 @@ const Skills = () => {
                 <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
                   Typescript (Intermediate)
                 </h2>
-                <p className="leading-relaxed text-sm text-justify">
-                  {`A strict syntactical superset of JavaScript, it helps to use javascript more safely. 
-                  Known how to use interface and Generics, but not fluently.`}
-                </p>
+                <ReactStars
+                  {...fluentLevel.Intermediate}
+                />
               </div>
             </div>
           </div>
           <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-            <div className="rounded bg-yellow-200 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+            <div className="rounded bg-pink-100 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
               <Image
                 className="rounded-full"
                 src="/logos/graphql.png"
@@ -119,9 +147,9 @@ const Skills = () => {
                 <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
                 GraphQL (Beginner)
                 </h2>
-                <p className="leading-relaxed text-sm text-justify">
-                  {`GraphQL is a query language for APIs, it gets data efficiently. Have been used with django REST API that built by own.`}
-                </p>
+                <ReactStars
+                  {...fluentLevel.Beginner}
+                />
               </div>
             </div>
           </div>
@@ -150,9 +178,9 @@ const Skills = () => {
                 <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
                   Jquery (Fluent)
                 </h2>
-                <p className="leading-relaxed text-sm text-justify">
-                  {`Well used powerful javascript library, have been do a team project with jQuery.`}
-                </p>
+                <ReactStars
+                  {...fluentLevel.fluent}
+                />
               </div>
             </div>
           </div>
@@ -170,9 +198,12 @@ const Skills = () => {
                 <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
                   Spring Framework (Fluent)
                 </h2>
-                <p className="leading-relaxed text-sm text-justify">
-                  {`This powerful framework helped me to build a web project. My team project was built with this framework using Mybatis and etc.`}
-                </p>
+                <ReactStars
+                  {...fluentLevel.fluent}
+                />
+                <span>
+                  ▶ Did a project with Spring(Java)
+                </span>
               </div>
             </div>
           </div>
@@ -189,10 +220,53 @@ const Skills = () => {
                 <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
                   React (Fluent)
                 </h2>
-                <p className="leading-relaxed text-sm text-justify">
-                  {`Most famous javascript library(State of CSS 2020), Libraries that made me interested in JavaScript. 
-                  Mostly using React Hook now, build components with function component. Recently interests at how to apply Typescript`}
-                </p>
+                <ReactStars
+                  {...fluentLevel.fluent}
+                />
+                <span>
+                  ▶ Did a personal web-memo application project
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
+            <div className="rounded bg-indigo-200 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+              <Image
+                className="rounded-full"
+                src="/logos/vue.jpg"
+                width={80}
+                height={80}
+                alt="vue.js icon"
+              />
+              <div className="flex-grow ">
+                <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
+                  Vue.js (Intermediate)
+                </h2>
+                <ReactStars
+                  {...fluentLevel.Intermediate}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
+            <div className="rounded bg-indigo-200 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
+              <Image
+                className="rounded-full"
+                src="/logos/nextjs.png"
+                width={80}
+                height={80}
+                alt="nextjs icon"
+              />
+              <div className="flex-grow ">
+                <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
+                  NextJS (Advanced)
+                </h2>
+                <ReactStars
+                  {...fluentLevel.Advanced}
+                />
+                <span>
+                  ▶ This portfolio site built in NextJS
+                </span>
               </div>
             </div>
           </div>
@@ -221,15 +295,12 @@ const Skills = () => {
                 <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
                   Oracle (Fluent)
                 </h2>
-                <p className="leading-relaxed text-sm text-justify">
-                  {`My first DBMS(database management system), Possible to modeling table and get data with using queries.`}
-                </p>
+                <ReactStars
+                  {...fluentLevel.fluent}
+                />
               </div>
             </div>
-          </div>
-
- 
-          
+          </div>          
           <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
             <div className="rounded bg-gray-200 p-4 transform translate-x-6 -translate-y-6 shadow-lg">
               <Image
@@ -243,9 +314,9 @@ const Skills = () => {
                 <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
                   Mongo DB (Advanced)
                 </h2>
-                <p className="leading-relaxed text-sm text-justify">
-                  {`Document-oriented DB program, classify to NoSQL database. Well known how to model and get data with mongoose library.`}
-                </p>
+                <ReactStars
+                  {...fluentLevel.Advanced}
+                />
               </div>
             </div>
           </div>
@@ -262,10 +333,9 @@ const Skills = () => {
                 <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
                   Google firebase (Intermediate)
                 </h2>
-                <p className="leading-relaxed text-sm text-justify">
-                  {`Firebase is a real-time database that easy to use. Also provide a free cloud storage for save images or document.
-                  Have been experienced to make a simple chat-app with firebase.`}
-                </p>
+                <ReactStars
+                  {...fluentLevel.Intermediate}
+                />
               </div>
             </div>
           </div>
