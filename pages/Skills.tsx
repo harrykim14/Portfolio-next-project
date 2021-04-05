@@ -146,6 +146,25 @@ const Skills = () => {
             <div className={langCardStyle}>
               <Image
                 className="rounded-full"
+                src="/logos/python.png"
+                width={80}
+                height={80}
+                alt="python icon"
+              />
+              <div className="flex-grow ">
+                <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
+                python (Advanced)
+                </h2>
+                <ReactStars
+                  {...fluentLevel.Advanced}
+                />
+              </div>
+            </div>
+          </div>
+          <div className={wrapContainerStyle}>
+            <div className={langCardStyle}>
+              <Image
+                className="rounded-full"
                 src="/logos/graphql.png"
                 width={80}
                 height={80}
@@ -173,6 +192,25 @@ const Skills = () => {
         </div>
 
         <div className="flex flex-wrap mb-6">
+          <div className={wrapContainerStyle}>
+            <div className={frlibCardStyle}>
+              <Image
+                className="rounded-full"
+                src="/logos/bootstrap.png"
+                width={80}
+                height={80}
+                alt="bootstrap icon"
+              />
+              <div className="flex-grow ">
+                <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
+                  Bootstrap (Fluent)
+                </h2>
+                <ReactStars
+                  {...fluentLevel.fluent}
+                />
+              </div>
+            </div>
+          </div>          
           <div className={wrapContainerStyle}>
             <div className={frlibCardStyle}>
               <Image
@@ -240,6 +278,44 @@ const Skills = () => {
             <div className={frlibCardStyle}>
               <Image
                 className="rounded-full"
+                src="/logos/react.png"
+                width={80}
+                height={80}
+                alt="react native icon"
+              />
+              <div className="flex-grow ">
+                <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
+                  React Native (Intermediate)
+                </h2>
+                <ReactStars
+                  {...fluentLevel.Intermediate}
+                />
+              </div>
+            </div>
+          </div>
+          <div className={wrapContainerStyle}>
+            <div className={frlibCardStyle}>
+              <Image
+                className="rounded-full"
+                src="/logos/styledcomponents.png"
+                width={80}
+                height={80}
+                alt="styled components icon"
+              />
+              <div className="flex-grow ">
+                <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
+                  Styled Components (Advanced)
+                </h2>
+                <ReactStars
+                  {...fluentLevel.Advanced}
+                />
+              </div>
+            </div>
+          </div>
+          <div className={wrapContainerStyle}>
+            <div className={frlibCardStyle}>
+              <Image
+                className="rounded-full"
                 src="/logos/vue.jpg"
                 width={80}
                 height={80}
@@ -274,6 +350,63 @@ const Skills = () => {
                 <span>
                   ▶ This portfolio site built in NextJS
                 </span>
+              </div>
+            </div>
+          </div>
+          <div className={wrapContainerStyle}>
+            <div className={frlibCardStyle}>
+              <Image
+                className="rounded-full"
+                src="/logos/djangorestframework.png"
+                width={80}
+                height={80}
+                alt="django rest framework icon"
+              />
+              <div className="flex-grow ">
+                <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
+                  django REST framework (Beginner)
+                </h2>
+                <ReactStars
+                  {...fluentLevel.Beginner}
+                />
+              </div>
+            </div>
+          </div>
+          <div className={wrapContainerStyle}>
+            <div className={frlibCardStyle}>
+              <Image
+                className="rounded-full"
+                src="/logos/tailwindcss.png"
+                width={80}
+                height={80}
+                alt="tailwindcss icon"
+              />
+              <div className="flex-grow ">
+                <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
+                  tailwindcss (Advanced)
+                </h2>
+                <ReactStars
+                  {...fluentLevel.Advanced}
+                />
+              </div>
+            </div>
+          </div>
+          <div className={wrapContainerStyle}>
+            <div className={frlibCardStyle}>
+              <Image
+                className="rounded-full"
+                src="/logos/deno.png"
+                width={80}
+                height={80}
+                alt="deno icon"
+              />
+              <div className="flex-grow ">
+                <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
+                  deno framework (Beginner)
+                </h2>
+                <ReactStars
+                  {...fluentLevel.Beginner}
+                />
               </div>
             </div>
           </div>
@@ -320,10 +453,10 @@ const Skills = () => {
               />
               <div className="flex-grow ">
                 <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
-                  Mongo DB (Advanced)
+                  Mongo DB (Intermediate)
                 </h2>
                 <ReactStars
-                  {...fluentLevel.Advanced}
+                  {...fluentLevel.Intermediate}
                 />
               </div>
             </div>
@@ -339,10 +472,10 @@ const Skills = () => {
               />
               <div className="flex-grow ">
                 <h2 className=" text-xl title-font font-medium mb-3 font-semibold">
-                  Google firebase (Intermediate)
+                  Google firebase (Advanced)
                 </h2>
                 <ReactStars
-                  {...fluentLevel.Intermediate}
+                  {...fluentLevel.Advanced}
                 />
               </div>
             </div>

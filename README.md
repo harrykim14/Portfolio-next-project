@@ -18,3 +18,18 @@
 - tailwindcss의 템플릿을 사용하여 카드 형식의 리스트가 담긴 페이지를 작성
 
 4. 기본적인 프로필 페이지를 작성 (21. 04. 04)
+
+5. 페이지를 반응형으로 변경
+
+- 모바일 뷰에서는 SideProfile에 프로필 캐릭터와 깃헙 아이콘만 뜨도록 함
+- 웹 뷰는 flex-col로, 모바일 뷰는 flex-row로 분리하여 정렬
+- window.innerWidth를 사용하기 위해 type guard를 적용
+
+```javascript
+useEffect(() => {
+  if (typeof window !== 'undefined') {
+    // detect window screen width function
+    setWidth(window.innerWidth)
+  }
+}, [])
+```
