@@ -1,6 +1,6 @@
 ### Next.js로 포트폴리오를 작성해보자!
 
-프로젝트 기간 : 21.04.02 ~
+프로젝트 기간 : 21.04.02 ~ 21.04.06 (완료)
 
 1. 이 프로젝트에서 진행할 것
 
@@ -34,4 +34,13 @@ useEffect(() => {
 }, [])
 ```
 
-6. 프로젝트 리스트 추가 (반응형 미적용)
+6. 프로젝트 리스트 페이지의 추가
+
+7. 기술 스택 페이지와 프로젝트 리스트 페이지의 성능 검사
+<image src="https://user-images.githubusercontent.com/67398691/113690692-a47a2b80-9706-11eb-8b0c-f581791b95d3.png" width="800"/>
+
+<image src="https://user-images.githubusercontent.com/67398691/113690785-bc51af80-9706-11eb-89f8-b53c84337d0f.png" width="800"/>
+
+* Cumulative Layout Shift란? : 방문자에게 콘텐츠가 얼마나 불안정한 지 측정하는 사용자 경험 측정 항목
+* 해결법 :image 태그에 width와 height를 적절히 선입력하여 UI가 렌더링되면서 변경되는 것을 최대한 막아야 한다.
+* 본 프로젝트에서의 CLS 점수 해결법은 svc 아이콘 (Material-ui의 깃헙 아이콘이나 새 창 아이콘)의 문제이므로 해당 아이콘의 width와 height를 적용해 주면 될 것.
