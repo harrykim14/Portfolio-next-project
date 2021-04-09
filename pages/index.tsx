@@ -54,7 +54,7 @@ const Home: React.FC = () => {
         </div>
         <div className="px-20">
           <Image
-            src="/GitHubCommits.jpg"
+            src="/GitHubCommits.JPG"
             width={1024}
             height={240}
             alt="GitHub Contributions"
