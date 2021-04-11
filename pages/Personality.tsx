@@ -26,7 +26,7 @@ const Personality = () => {
           <div className="flex flex-row justify-between align-item-center my-6 mx-8">
             <div className="md:my-4 mx-4 rounded border-solid border-2 border-gray-200">
               <Image
-                src="/personality/tanagement01.jpg"
+                src="/personality/tanagement01.JPG"
                 width={1000}
                 height={750}
                 alt="Personality Graph"
@@ -35,7 +35,7 @@ const Personality = () => {
             </div>
             <div className="md:my-4 mx-4 rounded border-solid border-2 border-gray-200">
               <Image
-                src="/personality/tanagement02.jpg"
+                src="/personality/tanagement02.JPG"
                 width={1000}
                 height={750}
                 alt="Personality Detail"
