@@ -44,6 +44,14 @@ const Layout: React.FC<TITLE> = ({
                   Projects
                 </a>
               </Link>
+              <Link href="/Personality">
+                <a
+                  data-testid="Personality-nav"
+                  className="text-yellow-600 hover:bg-yellow-100 px-4 py-3 rounded"
+                >
+                  Personality
+                </a>
+              </Link>
             </div>
           </div>
         </nav>
