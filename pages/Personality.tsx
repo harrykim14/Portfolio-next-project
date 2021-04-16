@@ -45,7 +45,7 @@ const Personality = () => {
           </div>
           <hr />
           <div className="text-base leading-relaxed px-12 py-8 mx-2 mb-4 sm:text-base md:text-xl">
-                Two characteristic, that are <span className="font-bold">"Research"</span> and <span className="font-bold">"Adjustment"</span> represents me. As a result of personality diagnosis at Tanagement, Would like to think deeply, likely do investigate essential problem and research efficient method(to work). <br/>
+                Two characteristics, that are <span className="font-bold">"Research"</span> and <span className="font-bold">"Adjustment"</span> represents me. As a result of personality diagnosis at Tanagement, Would like to think deeply, likely do investigate essential problem and research efficient method(to work). <br/>
                 Also prefer to summary as own words while studying. Clean up the goal of team (or personal) and prefer planned progress. Separate work with priority rule when complex situation occur. According to the result, plan a next work through feedback of recently result.
           </div>
         </div>

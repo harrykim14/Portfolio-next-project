@@ -1,0 +1,52 @@
+{
+    "java" : {
+        "details" : {
+            "src": "/logos/java.png",
+            "alt": "java icon",
+            "skillName" : "Java",
+            "fluentLevel":  5,
+            "describes" : "▶ Did a project with Java(Spring)"
+        }
+    },
+    "html&css": {
+        "details" : {
+            "src": "/logos/htmlcss.png",
+            "alt": "html and css icon",
+            "skillName" : "HTML, CSS",
+            "fluentLevel":  5
+        }
+    },
+    "Javascript": {
+        "details" : {
+            "src": "/logos/js.png",
+            "alt": "javascript icon",
+            "skillName" : "Javascript",
+            "fluentLevel":  5,
+            "describes" : "▶ Main language now"
+        }
+    },
+    "Typescript": {
+        "details" : {
+            "src": "/logos/ts.png",
+            "alt": "typescripe icon",
+            "skillName" : "Typescript",
+            "fluentLevel":  4
+        }
+    },
+    "python": {
+        "details" : {
+            "src": "/logos/python.png",
+            "alt": "python icon",
+            "skillName" : "python",
+            "fluentLevel":  3
+        }
+    },
+    "GraphQL": {
+        "details" : {
+            "src": "/logos/graphql.png",
+            "alt": "graphql icon",
+            "skillName" : "GraphQL",
+            "fluentLevel":  2
+        }
+    }
+}

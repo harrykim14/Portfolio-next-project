@@ -1,0 +1,26 @@
+{
+    "Oracle Database" : {
+        "details" : {
+            "src": "/logos/oracledb.png",
+            "alt": "oracle db icon",
+            "skillName" : "Oracle Database",
+            "fluentLevel": 5
+        }
+    },
+    "Mongo DB": {
+        "details" : {
+            "src": "/logos/mongodb.png",
+            "alt": "mongodb icon",
+            "skillName" : "Mongo DB",
+            "fluentLevel": 4
+        }
+    },
+    "Google firebase": {
+        "details" : {
+            "src": "/logos/firebase.png",
+            "alt": "firebase icon",
+            "skillName" : "Google firebase",
+            "fluentLevel": 3
+        }
+    }
+}

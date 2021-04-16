@@ -1,0 +1,93 @@
+{
+    "Bootstrap" : {
+        "details" : {
+            "src": "/logos/bootstrap.png",
+            "alt": "bootstrap icon",
+            "skillName" : "Bootstrap",
+            "fluentLevel": 5
+        }
+    },
+    "jQuery": {
+        "details" : {
+            "src": "/logos/jquery.jpg",
+            "alt": "jquery icon",
+            "skillName" : "jQuery",
+            "fluentLevel": 5
+        }
+    },
+    "Spring": {
+        "details" : {
+            "src": "/logos/spring.png",
+            "alt": "spring icon",
+            "skillName" : "Spring Framework",
+            "fluentLevel": 5,
+            "describes" : "▶ Did a project with Spring(Java)"
+        }
+    },
+    "React": {
+        "details" : {
+            "src": "/logos/react.png",
+            "alt": "react icon",
+            "skillName" : "React",
+            "fluentLevel": 5,
+            "describes" : "▶ Did a personal web-memo application project"
+        }
+    },
+    "React Native": {
+        "details" : {
+            "src": "/logos/react.png",
+            "alt": "react native icon",
+            "skillName" : "React Native",
+            "fluentLevel": 4
+        }
+    },
+    "Styled Components": {
+        "details" : {
+            "src": "/logos/styledcomponents.png",
+            "alt": "styled components icon",
+            "skillName" : "Styled Components",
+            "fluentLevel": 3
+        }
+    },
+    "Vue.js": {
+        "details" : {
+            "src": "/logos/vue.jpg",
+            "alt": "vue.js icon",
+            "skillName" : "Vue.js",
+            "fluentLevel": 4
+        }
+    },
+    "NextJS": {
+        "details" : {
+            "src": "/logos/nextjs.png",
+            "alt": "nextjs icon",
+            "skillName" : "NextJS",
+            "fluentLevel": 3,
+            "describes" : "▶ This portfolio site built in NextJS"
+        }
+    },
+    "django REST framework": {
+        "details" : {
+            "src": "/logos/djangorestframework.png",
+            "alt": "django rest framework icon",
+            "skillName" : "django REST framework",
+            "fluentLevel": 3
+        }
+    },
+    "tailwindcss": {
+        "details" : {
+            "src": "/logos/tailwindcss.png",
+            "alt": "tailwindcss icon",
+            "skillName" : "tailwindcss",
+            "fluentLevel": 3
+        }
+    },
+    "deno framework": {
+        "details" : {
+            "src": "/logos/deno.png",
+            "alt": "deno icon",
+            "skillName" : "deno framework",
+            "fluentLevel": 2
+        }
+    }
+}
