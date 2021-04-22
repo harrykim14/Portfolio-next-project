@@ -44,7 +44,7 @@ const Skills = () => {
 
         <SkillHeader {...headerDetails[0]} />
 
-        <div className="flex flex-wrap mb-6">
+        <div className="flex flex-wrap mb-6 xs:justify-center md:justify-center lg:justify-start">
         { langArr && langArr.map((lang, idx) =>
           <SkillCard {...lang} key={idx}/>
         )}
@@ -52,13 +52,13 @@ const Skills = () => {
 
         <SkillHeader {...headerDetails[1]} />
 
-        <div className="flex flex-wrap mb-6">
+        <div className="flex flex-wrap mb-6 xs:justify-center md:justify-center lg:justify-start">
           {libfraArr && libfraArr.map((skill, idx) => <SkillCard {...skill} key={idx}/>)}
         </div>
 
         <SkillHeader {...headerDetails[2]} />
 
-        <div className="flex flex-wrap mb-6">
+        <div className="flex flex-wrap mb-6 xs:justify-center md:justify-center lg:justify-start">
           {dbArr && dbArr.map((skill, idx) => <SkillCard {...skill} key={idx} />)}
         </div>
       </div>

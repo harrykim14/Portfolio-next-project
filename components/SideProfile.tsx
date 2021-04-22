@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
 import GitHubIcon from '@material-ui/icons/GitHub'
 
@@ -26,12 +25,12 @@ const SideProfile: React.FC = () => {
       />
       </div>
 
-      { width > 720 ?
+      { width > 860 ?
         <div>
         <span className="flex items-center justify-center font-mono font-bold text-2xl m-2">
         Harry Kim
       </span>
-      <span className="flex items-center justify-center font-mono text-gray-600 text-base m-2">
+      <span className="flex items-center justify-center font-mono text-gray-600 text-base m-2 pl-6">
         Interested In Front-end 
       </span>
       <div className="flex items-center justify-center">
@@ -40,7 +39,7 @@ const SideProfile: React.FC = () => {
             className="cursor-pointer hover:opacity-80 "    
         >
           <GitHubIcon className="mr-2"/>
-          <span className="text-lg">GitHub Link</span>
+          <span className="text-lg">GitHub</span>
         </a>
       </div>
       </div>

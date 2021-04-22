@@ -6,11 +6,10 @@ import { DETAILS } from '../types/types'
 
 const SkillCard = ({ src, alt, skillName, fluentLevel, describes, color }: DETAILS) => {
   
-  const CARDSTYLE = `rounded p-4 shadow-lg bg-${color}-200 min-w-full min-h-full`
+  const CARDSTYLE = `rounded p-4 shadow-lg bg-${color}-100 min-w-full min-h-full`;
   const CONTAINERSTYLE =
-    'mb-4 mx-4 md:w-1/3 md:my-3 lg:mx-8 lg:w-1/4 flex flex-col sm:flex-row'
+    'mb-4 ml-4 xs:w-80 xs:mx-4 sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-col sm:flex-row'
  
-
   return <div className={CONTAINERSTYLE}>
   <div className={CARDSTYLE}>
   <Image className="rounded-full"
