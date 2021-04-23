@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import SideProfile from './SideProfile'
@@ -8,6 +9,20 @@ interface TITLE {
 }
 
 const Layout: React.FC<TITLE> = ({ children, title }) => {
+
+  const [ language, setLanguage ] = useState('kor')
+  const [ width, setWidth ] = useState(0)
+
+  useEffect(() => {
+    if (typeof window !== undefined){
+      setWidth(window.innerWidth)
+    }
+  })
+
+  const changeLanguageHandler = e => {
+    setLanguage(e.target.value)
+  }
+
   return (
     <div className="flex justify-center items-center flex-col min-h-screen font-mono">
       <Head>
@@ -57,7 +72,7 @@ const Layout: React.FC<TITLE> = ({ children, title }) => {
             <Grid item xs={2}>
               <div className="flex items-center pl-8 h-14">
                 <div className="flex space-x-4">
-                  <select className="rounded bg-gray-50 mx-2 w-32 h-10 select-text px-4">
+                  <select className="rounded bg-gray-50 mx-2 w-32 h-10 select-text px-4" onChange={changeLanguageHandler}>
                     <option value="kor">한국어</option>
                     <option value="jpn">日本語</option>
                     <option value="eng">English</option>
@@ -71,7 +86,7 @@ const Layout: React.FC<TITLE> = ({ children, title }) => {
       <main className="flex flex-1 justify-center items-center flex-col w-screen">
         <Grid container>
           <Grid item xs={2}>
-            <SideProfile />
+            <SideProfile children={width as React.ReactNode}/>
           </Grid>
           <Grid item xs={10}>
             {children}

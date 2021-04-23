@@ -2,16 +2,19 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import GitHubIcon from '@material-ui/icons/GitHub'
 
-const SideProfile: React.FC = () => {
-  const [width, setWidth] = useState(0);
-  
+const SideProfile: React.FC = (children: React.ReactNode) => {
+
+  const [ textVisible, isTextVisible ] = useState(true)
+
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      // detect window screen width function
-      setWidth(window.innerWidth);
-    }
-  }, []);
-  
+      // if(window.innerWidth > 860) {
+      //   isTextVisible(true)
+      // } else {
+      //   isTextVisible(false)
+      // }
+      console.log(children)
+  }, [children]);
+
 
   return ( 
     <div className="h-full bg-gray-50">
@@ -25,7 +28,7 @@ const SideProfile: React.FC = () => {
       />
       </div>
 
-      { width > 860 ?
+      { textVisible ?
         <div>
         <span className="flex items-center justify-center font-mono font-bold text-2xl m-2">
         Harry Kim

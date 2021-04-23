@@ -10,6 +10,7 @@
 - [ ] ~~공부했던 것들을 블로그 형식의 페이지로 분할~~
 - [x] **(대체)** 기술 스택을 카드 리스트로 변경
 - [x] **(추가)** 태니지먼트의 성격 진단 결과를 페이지로 추가
+- [ ] 성격 페이지의 반응형 조절 (이미지 및 텍스트 사이즈 조절)
 - [x] **(리팩토링)** 기술 스택의 카드를 재사용 가능한 컴포넌트로 변경
 - [ ] (추가) 다언어(일본어, 영어, 한국어) 표기를 위한 셀렉트 박스 생성
 - [ ] (추가) 페이지 별 텍스트를 json 파일로 추가
@@ -25,7 +26,7 @@
 
 4. 기본적인 프로필 페이지를 작성 (21. 04. 04)
 
-5. 페이지를 반응형으로 변경
+5. 페이지를 반응형으로 변경 (진행중)
 
 - 모바일 뷰에서는 SideProfile에 프로필 캐릭터와 깃헙 아이콘만 뜨도록 함
 - 웹 뷰는 flex-col로, 모바일 뷰는 flex-row로 분리하여 정렬
@@ -45,7 +46,7 @@ useEffect(() => {
 7. 기술 스택 페이지와 프로젝트 리스트 페이지의 성능 검사
    <image src="https://user-images.githubusercontent.com/67398691/113690692-a47a2b80-9706-11eb-8b0c-f581791b95d3.png" width="800"/>
 
-<image src="https://user-images.githubusercontent.com/67398691/113690785-bc51af80-9706-11eb-89f8-b53c84337d0f.png" width="800"/>
+   <image src="https://user-images.githubusercontent.com/67398691/113690785-bc51af80-9706-11eb-89f8-b53c84337d0f.png" width="800"/>
 
 - Cumulative Layout Shift란? : 방문자에게 콘텐츠가 얼마나 불안정한 지 측정하는 사용자 경험 측정 항목
 - 해결법 :image 태그에 width와 height를 적절히 선입력하여 UI가 렌더링되면서 변경되는 것을 최대한 막아야 한다.
@@ -53,3 +54,6 @@ useEffect(() => {
 
 8. 태니지먼트의 성격 진단 결과를 페이지로 추가 (21. 04. 11)
    [태니지먼트](https://www.tanagement.co.kr/home/main)의 나의 강점 진단 결과를 토대로 성격 진단 페이지를 생성
+
+9. 전역 변수로 사용하기 위한 상태 저장용 컨텍스트를 생성 (21. 04. 24)
+   React의 `useReducer, useContext, createContext, Dispatch`를 사용하여 리듀서 및 전역 변수를 담는 컨텍스트를 생성, `_app.tsx`에 적용

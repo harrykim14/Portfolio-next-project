@@ -1,11 +1,16 @@
+import { useEffect } from 'react'
 import Layout from '../components/Layout'
 import Image from 'next/image'
+import { useCustomState, useCustomDispatch } from '../context/StateProvider'
 
 const Home: React.FC = () => {
   const discribeTextStyle =
     'text-base leading-relaxed px-12 mx-2 mb-4 sm:text-base md:text-xl'
   const titleStyle =
     'title-font mx-2 mb-4 text-4xl font-extrabold leading-10 tracking-tight'
+
+  const state = useCustomState()
+  const dispatch = useCustomDispatch()
 
   return (
     <Layout title="Portfolio">

@@ -1,0 +1,170 @@
+{
+  "Profile": {
+    "kor": {
+        "name": {
+            "title":"김현철",
+            "description":"1989. 10. 21. / 대한민국 서울\n핸드폰 번호: 010-8**6-2**3\n이메일: harrykim14@korea.ac.kr"
+        },
+        "education":{
+            "title":"학력",
+            "description":"2015.03 ~ 2017.03 고려대학교 일반대학원 뇌공학과 (석사 수료)"
+        },
+        "introduce":{
+            "title":"자기소개",
+            "description":"2020년 2월 자바를 국비교육을 통해 첫 언어로 배웠습니다. 국비교육 이후에 자바스크립트에 흥미가 생겨 프론트엔드에 관해 배우기 시작했습니다. 지금은 웹프로그래밍에 푹 빠져있고, 주로 프론트엔드 기술에 흥미가 있습니다."
+        },
+        "GitHub Contributions" : {
+            "title":"GitHub 이력"
+        }
+    },
+    "eng": {
+        "name": {
+            "title":"Harry Kim",
+            "description":"1989. 10. 21. / Seoul, Korea\nTel. (+82) 010-8**6-2**3\nEmail. harrykim14@korea.ac.kr"
+        },
+        "education":{
+            "title":"Education",
+            "description":"2015.03 ~ 2017.03 Korea Univ. Major in Brain and Cognitive Engineering (All but dissertation)"
+        },
+        "introduce":{
+            "title":"Introduce",
+            "description":"Learned Java as the first programming language since Feb 2020 through country supported IT bootcamp.\nAfter bootcamp, interests was shifted to Javascript and started to learn front-end knowledge.\nFully immersed at web programming, mainly front-end technology."
+        },
+        "GitHub Contributions" : {
+            "title":"GitHub Contributions"
+        }
+    },
+    "jpn": {
+        "name": {
+            "title":"キム ヒョンチョル",
+            "description":"1989. 10. 21. / ソウル, 韓国\n電話番号: (+82) 010-8**6-2**3\nメールアドレス: harrykim14@korea.ac.kr"
+        },
+        "education":{
+            "title":"学歴",
+            "description":"2015.03 ~ 2017.03 高麗大学院 脳工学科 (修士課程修了)"
+        },
+        "introduce":{
+            "title":"自己紹介",
+            "description":"2020年2月からの国家支援IT教育を通じてJavaを初めてのプログラミング言語として学びました。IT教育の後、Javascriptに興味を持ち、フロントエンドの勉強を始めました。今はウェブプログラミングに没頭していて、主に最新フロントエンド技術に興味があります。"
+        },
+        "GitHub Contributions" : {
+            "title":"GitHub 履歴"
+        }
+    }
+  },
+  "projects": {
+    "kor": {
+        "title" : "팀 프로젝트 및 개인 프로젝트",
+        "Project WeMo" :"",
+        "Seoul Bicycle Place" : "",
+        "Wemo React Project" : "",
+        "Firebase Chat app" : "",
+        "NextJS blog" : "",
+        "GitHub Blog" : ""
+    },
+    "eng": {
+        "title": "Project List",
+        "1" : {
+            "title" : "Project WeMo",
+            "Usage" : "Java, Oracle DB, Spring w/ Mybatis, Tomcat server, Javascript, jQuery, Bootstrap",
+            "Describe": "First team project at IT bootcamp, CRUD are operated with Ajax when user event occur",
+            "Duration": "4 weeks",
+            "Participation" : "40% (UI/UX, DB modeling, Eventhandling functions etc.)"
+        },
+        "2" : {
+            "title" : "Seoul Bicycle Place",
+            "Usage" : "React (mini project)",
+            "Describe" : "Seoul public rental bike named “Ddarungee’, this app shows location of rental place and bicycle remains.",
+            "Duration" : "1 days",
+            "Participation" : "100% (personal mini project)"
+        },
+        "3" : {
+            "title" : "Wemo React Project",
+            "Usage" : "React Hook, Mongo DB, Node.js server, Material-ui",
+            "Describe" : "Rebuild the first memo app with React and mongo DB(modeling with Mongoose). Some UI/UX changed and improved user convenience. Also tried TDD method of development.",
+            "Duration" : "4 weeks",
+            "Participation" : "100% (personal project)"
+        },
+        "4" : {
+            "title" : "Firebase Chat app",
+            "Usage" : "React Hook, Node.js server, Google Firebase DB",
+            "Describe" : "A simple chat app with real-time database, Firebase. Front side was built by React Hook.",
+            "Duration" : "3 weeks",
+            "Participation" : "100% (personal project)"
+        },
+        "5" : {
+            "title" : "NextJS blog with REST API using django REST framework",
+            "Usage" : "Python, django, django REST framework, Javascript, React, NextJs, Tailwind CSS",
+            "Describe" : "Simple blog page with NextJS, To-do list(CRUD) is changed with user event through django REST api modeled by django REST framework.",
+            "Duration" : "1 weeks",
+            "Participation" : "100% (personal project)"
+        },
+        "6" : {
+            "title" : "GitHub Blog with Hexo framework",
+            "Usage" : "Javascript based Hexo framework",
+            "Describe" : "Individual blog for summary personal studies that is built by Hexo framework.",
+            "Duration" : " 1 days to build, Keep updated",
+            "Participation" : "100% (personal project)"
+        }
+    },
+    "jpn": {
+        "title" : "チームプロジェクトと個人プロジェクト",
+        "1" : {
+            "title" : "Project WeMo",
+            "Usage" : "Java, Oracle DB, Spring w/ Mybatis, Tomcat server, Javascript, jQuery, Bootstrap",
+            "Describe": "初めてのチームプロジェクト(国家支援IT教育内)でユーザーの行動によってAjaxを通じCRUDを実行します。",
+            "Duration": "4 週間",
+            "Participation" : "40% (UI/UX, DB モデリング, イベントハンドラー関数など)"
+        },
+        "2" : {
+            "title" : "ソウル市営バイク情報ページ",
+            "Usage" : "React (ミニプロジェクト)",
+            "Describe" : "ソウル市営バイク 「タルンイ」、このページはその「タルンイ」停留所の位置と残台数を表示します。",
+            "Duration" : "１日",
+            "Participation" : "100% (personal mini project)"
+        },
+        "3" : {
+            "title" : "Wemo React Project",
+            "Usage" : "React Hook, Mongo DB, Node.js server, Material-ui",
+            "Describe" : "Rebuild the first memo app with React and mongo DB(modeling with Mongoose). Some UI/UX changed and improved user convenience. Also tried TDD method of development.",
+            "Duration" : "4 weeks",
+            "Participation" : "100% (personal project)"
+        },
+        "4" : {
+            "title" : "Firebase Chat app",
+            "Usage" : "React Hook, Node.js server, Google Firebase DB",
+            "Describe" : "A simple chat app with real-time database, Firebase. Front side was built by React Hook.",
+            "Duration" : "3 weeks",
+            "Participation" : "100% (personal project)"
+        },
+        "5" : {
+            "title" : "NextJS blog with REST API using django REST framework",
+            "Usage" : "Python, django, django REST framework, Javascript, React, NextJs, Tailwind CSS",
+            "Describe" : "Simple blog page with NextJS, To-do list(CRUD) is changed with user event through django REST api modeled by django REST framework.",
+            "Duration" : "1 weeks",
+            "Participation" : "100% (personal project)"
+        },
+        "6" : {
+            "title" : "GitHub Blog with Hexo framework",
+            "Usage" : "Javascript based Hexo framework",
+            "Describe" : "Individual blog for summary personal studies that is built by Hexo framework.",
+            "Duration" : " 1 days to build, Keep updated",
+            "Participation" : "100% (personal project)"
+        }
+    }
+  },
+  "Personality": {
+    "kor": {
+      "title": "성격 진단 (w/태니지먼트)",
+      "description": "제 성격을 나타내는 두 단어는 \"탐구\"와 \"조정\"입니다. 태니지먼트의 성격 진단 결과에 따르면 깊이 생각하는 것을 좋아하고 본질적인 문제를 탐구하며 일의 효율적인 방법을 연구합니다. \n그리고 학습하며 생각들을 글로 정리하고자 합니다. 복잡한 상황에서 팀의 목표를 우선 순위에 따라 정돈하고 실행결과에 따라 지난 일들을 피드백하고 다음 해야 할 일을 계획합니다."
+    },
+    "eng": {
+      "title": "Personality diagnosis (w/Tanagement)",
+      "description": "Two characteristics, that are \"Research\" and \"Adjustment\" represents me. As a result of personality diagnosis at Tanagement, Would like to think deeply, likely do investigate essential problem and research efficient method(to work). \nAlso prefer to summary as own words while studying. Clean up the goal of team (or personal) and prefer planned progress. Separate work with priority rule when complex situation occur. According to the result, plan a next work through feedback of recently result."
+    },
+    "jpn" :{
+        "title" : "性格診断(タネジメント診断より)",
+        "description": "自分の性格を表す二つの単語は\"探求\"と\"調整\"です。タネジメントの性格診断結果異によると深く考えることが好きで問題の本質的部分を探求し、どう仕事を効率的にできるかを研究します。\nそして何かを学びながら得たものを文章として整えようとします。複雑な状況でチームの目標を優先順位によって区別します。結果によって過去の仕事をフィートバックし、次の仕事を計画します。"
+    }
+  }
+}
