@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Noto Sans JP;
+    font-weight: 300;
+    src: url(/public/font/NotoSansJP-Light) format('otf');
+  }
+  @font-face {
+    font-family: Noto Sans KR;
+    font-weight: 300;
+    src: url(/public/font/NotoSansKR-Light) format('otf');
+  }
+  @font-face {
+    font-family: Noto Sans;
+    font-weight: 300;
+    src: url(/public/font/NotoSans-Regular) format('ttf');
+  }
+}

@@ -16,5 +16,7 @@ module.exports = {
       extend: {},
   },
   plugins: [],
-  
+  fontFamily: {
+    NotoSans: ['Noto Sans JP', 'Noto Sans KR', 'Noto Sans']
+  }
 }

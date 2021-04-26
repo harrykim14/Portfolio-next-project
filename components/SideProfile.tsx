@@ -1,23 +1,29 @@
 import { useState, useEffect } from 'react'
+
 import Image from 'next/image'
 import GitHubIcon from '@material-ui/icons/GitHub'
 
-const SideProfile: React.FC = (children: React.ReactNode) => {
+const SideProfile = () => {
 
   const [ textVisible, isTextVisible ] = useState(true)
 
   useEffect(() => {
-      // if(window.innerWidth > 860) {
-      //   isTextVisible(true)
-      // } else {
-      //   isTextVisible(false)
-      // }
-      console.log(children)
-  }, [children]);
+    if (typeof window !== undefined) {
+      window.addEventListener('resize', handleResize);
+      return () => { // cleanup 
+        window.removeEventListener('resize', handleResize);
+      }
+    }
+  }, []);
+
+  const handleResize = () => {
+    window.innerWidth > 850 ? isTextVisible(true) : isTextVisible(false)
+  }
+
 
 
   return ( 
-    <div className="h-full bg-gray-50">
+    <div className="h-full bg-gray-50" >
       <div className="flex items-center justify-center p-2 py-10">
       <Image
         src="/avatar.jpg"

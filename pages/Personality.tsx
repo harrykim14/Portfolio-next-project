@@ -1,24 +1,39 @@
 import Image from 'next/image'
 import Layout from '../components/Layout'
-import { useState } from 'react'
+import LaunchIcon from '@material-ui/icons/Launch'
+import { useState, useEffect } from 'react'
+import { useCustomState } from '../context/StateProvider'
+import ProfileDetails from '../public/static/page-details.json';
 
 const Personality = () => {
-  const [toggle, setToggle] = useState(true)
+
+  type personalityType = {
+    title: string
+    description: string
+  }
+
+  const state = useCustomState()
+  const [ personaility, setPersonality ] = useState({} as personalityType)
+
+  useEffect(() => {
+    let changedLanguage = state.language
+    setPersonality(state => ProfileDetails.Personality[changedLanguage])
+  }, [state.language])
 
   return (
     <Layout title="Personality">
       <div className="min-h-screen">
         <div className="max-w-6xl mx-auto px-5 py-12">
           <h1 className="title-font mx-2 mb-4 xs:text-2xl sm:text-3xl md:text-4xl font-extrabold leading-10 tracking-tight">
-            Personality diagnosis (w/
+            {personaility && personaility.title}
+            {` `}
             <a
               className="hover:text-gray-400 cursor-pointer"
               href="www.tanagement.co.kr/"
               target="_blank"
             >
-              Tanagement
+              <LaunchIcon />
             </a>
-            )
           </h1>
           <div className="flex mt-4 mx-12">
             <div className="w-72 h-1 rounded-full bg-gray-300 inline-flex"></div>
@@ -45,8 +60,9 @@ const Personality = () => {
           </div>
           <hr />
           <div className="text-base leading-relaxed px-12 py-8 mx-2 mb-4 sm:text-base md:text-xl">
-                Two characteristics, that are <span className="font-bold">"Research"</span> and <span className="font-bold">"Adjustment"</span> represents me. As a result of personality diagnosis at Tanagement, Would like to think deeply, likely do investigate essential problem and research efficient method(to work). <br/>
-                Also prefer to summary as own words while studying. Clean up the goal of team (or personal) and prefer planned progress. Separate work with priority rule when complex situation occur. According to the result, plan a next work through feedback of recently result.
+          {personaility.description && personaility.description.split('\n').map((line, idx) => {
+            return (<span key={idx}>{line}<br/></span>)
+          })}
           </div>
         </div>
       </div>
