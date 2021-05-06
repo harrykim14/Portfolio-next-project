@@ -18,7 +18,7 @@ const Personality = () => {
   useEffect(() => {
     let changedLanguage = state.language
     setPersonality(state => ProfileDetails.Personality[changedLanguage])
-  }, [state.language])
+  }, [])
 
   return (
     <Layout title="Personality">
